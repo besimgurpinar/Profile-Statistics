@@ -1,0 +1,82 @@
+
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --font-family: sans-serif;
+      --font-size: 18px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-right: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    li span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    li p {
+      color: var(--secondary-color);
+      font-size: 14px;
+    }
+
+    /* New styles for the chart */
+    .chart-container {
+      width: 80%;
+      height: 300px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .chart-bar {
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      background-color: var(--primary-color);
+      border-radius: 5px 5px 0 0;
+    }
+
+    .chart-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .chart-labels span {
+      font-size: 14px;
+      color: var(--secondary-color);
+    }
+ 
